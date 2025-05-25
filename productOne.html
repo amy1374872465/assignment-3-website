@@ -10,10 +10,10 @@
     <!--heading and nav bar-->
     <p><a href="">Home</a> | Shop Coffee</p>
 
-    <section>
+    <section class="columns">
       <!-- 2 columns of actual info under orange FLEX BOX-->
 
-      <div>
+      <div class="leftColumn">
         <!--product info-->
         <img src="images/don-claudio.jpg" alt="" width="270px" />
 
@@ -40,25 +40,33 @@
         </div>
       </div>
 
-      <div>
+      <div class="rightColumn">
         <!--add to cart column-->
 
         <div>
           <h3>Costa Rica Don Claudio Natural</h3>
           <p>$17.00</p>
 
-          <div>
+          <div class="greyBox">
             <!--cart box, give own class-->
             <form action="">
-              <label for="">Size:</label>
-              <select name="" id="">
-                <option value="">250g</option>
-              </select>
-              <label for="">Grind Type:</label>
-              <select name="" id="">
-                <option value="">Whole beans</option>
-              </select>
-              <label for="">Quantity</label>
+              <div class="sizeAndGrind">
+                <div class="vertical">
+                  <label for="size">Size:</label>
+                  <select name="" id="">
+                    <option value="">250g</option>
+                  </select>
+                </div>
+
+                <div class="vertical">
+                  <label for="grindType">Grind Type:</label>
+                  <select name="" id="">
+                    <option value="">Whole beans</option>
+                  </select>
+                </div>
+              </div>
+
+              <label for="quantity" class="quantity">Quantity</label>
               <input
                 type="number"
                 id="quantity"
@@ -69,7 +77,7 @@
               />
             </form>
 
-            <div>
+            <div class="twoButtons">
               <button>ADD TO CART</button> <button>ADD TO WISHLIST</button>
             </div>
           </div>

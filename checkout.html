@@ -9,59 +9,64 @@
   <body>
     <!--form-->
     <h1>Checkout</h1>
-    <form action="">
-      <!--form related-->
 
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" />
+    <section class="column">
+      <form action="">
+        <!--form related-->
 
-      <label for="mobile" id="mobile">Mobile:</label>
-      <input type="text" id="mobile" name="mobile" />
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" />
 
-      <label for="email">Email:</label>
-      <input type="text" id="email" name="email" />
+        <label for="mobile" id="mobile">Mobile:</label>
+        <input type="text" id="mobile" name="mobile" />
 
-      <label for="">Address Line 1:</label>
-      <input type="text" id="address" name="address" />
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" />
 
-      <label for="Country">Country:</label>
-      <select name="country" id="">
-        <option value="select">Select</option>
-        <option value="Australia">Australia</option>
-      </select>
+        <label for="">Address Line 1:</label>
+        <input type="text" id="address" name="address" />
 
-      <label for="Post Code:">Post Code:</label>
-      <input type="text" />
+        <label for="Country">Country:</label>
+        <select name="country" id="">
+          <option value="select">Select</option>
+          <option value="Australia">Australia</option>
+        </select>
 
-      <label for="state">State:</label>
-      <select name="state" id="state">
-        <option value="select">Select</option>
-        <option value="act">Australian Capital Territory</option>
-        <option value="nsw">New South Wales</option>
-        <option value="northern territory">Northern Territory</option>
-        <option value="queensland">Queensland</option>
-        <option value="south aus">South Australia</option>
-        <option value="tas">Tasmania</option>
-        <option value="vic">Victoria</option>
-        <option value="wa">Western Australia</option>
-      </select>
+        <label for="Post Code:">Post Code:</label>
+        <input type="text" />
 
-      <label for="payment">Payment Method:</label>
-      <select name="payment" id="payment">
-        <option value="select">Select</option>
-        <option value="creditCard">Credit Card</option>
-        <option value="paypal">PayPal</option>
-      </select>
-    </form>
+        <label for="state">State:</label>
+        <select name="state" id="state">
+          <option value="select">Select</option>
+          <option value="act">Australian Capital Territory</option>
+          <option value="nsw">New South Wales</option>
+          <option value="northern territory">Northern Territory</option>
+          <option value="queensland">Queensland</option>
+          <option value="south aus">South Australia</option>
+          <option value="tas">Tasmania</option>
+          <option value="vic">Victoria</option>
+          <option value="wa">Western Australia</option>
+        </select>
 
-    <div>
-      <!--confirmation-->
-      <h3>Order</h3>
-      <div><!--for order images--></div>
-      <p>Subtotal</p>
-      <p>Tax</p>
-      <p>Total</p>
-      <div><button>PLACE ORDER</button> <button>CONTINUE SHOPPING</button></div>
-    </div>
+        <label for="payment">Payment Method:</label>
+        <select name="payment" id="payment">
+          <option value="select">Select</option>
+          <option value="creditCard">Credit Card</option>
+          <option value="paypal">PayPal</option>
+        </select>
+      </form>
+
+      <div>
+        <!--confirmation-->
+        <h3>Order</h3>
+        <div><!--for order images--></div>
+        <p>Subtotal</p>
+        <p>Tax</p>
+        <p>Total</p>
+        <div class="twoButtons">
+          <button>PLACE ORDER</button> <button>CONTINUE SHOPPING</button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
