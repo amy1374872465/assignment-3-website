@@ -1,7 +1,14 @@
 /*reset ?*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   background-color: rgb(201, 192, 255);
+  overflow: hidden;
+  padding: 2em;
 }
 
 li {
@@ -40,6 +47,97 @@ li {
   background-color: azure;
   padding: 2em;
 }
+
+.centerText > * + * {
+  text-align: center;
+  margin: 1em;
+}
+
+.article {
+  display: flex;
+  justify-content: center;
+
+  gap: 2em;
+
+  /*
+  flex: 1 1 100%;
+    flex-basis: 40rem;
+  flex-grow: 999;
+
+  
+  */
+}
+
+.gridLayout {
+  background-color: aqua;
+  display: grid;
+  /*  grid-template-columns: auto auto auto; */
+  grid-template-columns: 1fr 1fr 1fr;
+
+  padding: 1em;
+  gap: 1em;
+  justify-content: center;
+  align-items: start;
+
+  /* position: relative;
+    grid-auto-flow: column;
+justify-content: center;
+   
+   put in 2 x 3 grid
+  grid-template-rows: auto auto auto;
+
+  
+  
+  
+  display: flex;
+  flex-wrap: wrap;
+  
+  gap: 1em; */
+}
+
+.listing {
+  border: solid 1px rgb(90, 13, 13);
+  padding: 1em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.listing > p {
+  margin: 0.5em;
+}
+
+.fix {
+  position: sticky;
+  top: 2em;
+}
+
+.orangeHover:hover {
+  color: rgb(226, 141, 13);
+  transition: 0.1s;
+}
+
+.listingImage img {
+  display: block;
+  transition: transform 0.2s;
+}
+
+.listingImage:hover {
+  transform: scale(1.05);
+
+  /*    height: 250px;
+z-index: 2;
+
+  display: block;
+  position: absolute;
+  background-color: blueviolet;
+  box-shadow: 1;
+  */
+}
+
+/*checkout, cart*/
 
 form {
   display: flex;
