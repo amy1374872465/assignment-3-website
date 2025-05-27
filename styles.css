@@ -6,9 +6,24 @@
 }
 
 body {
-  background-color: rgb(201, 192, 255);
-  overflow: hidden;
+  background-color: lightgrey;
+  /* overflow: hidden;*/
   padding: 2em;
+}
+
+html {
+  overflow-y: scroll;
+}
+body {
+  position: absolute;
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+body {
+  position: absolute;
 }
 
 li {
@@ -48,28 +63,51 @@ li {
   padding: 2em;
 }
 
+.centerText {
+  text-align: center;
+}
+
 .centerText > * + * {
   text-align: center;
   margin: 1em;
 }
 
+.clusterNav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: end;
+  flex-direction: row;
+}
+
+.cluster > * {
+  margin: 1.5em;
+  /*  flex: 1 1 30%; */
+}
+
 .article {
   display: flex;
   justify-content: center;
-
   gap: 2em;
 
   /*
   flex: 1 1 100%;
     flex-basis: 40rem;
   flex-grow: 999;
+  align-items: start;
 
   
   */
 }
 
 .gridLayout {
-  background-color: aqua;
+  background-color: lightgray;
   display: grid;
   /*  grid-template-columns: auto auto auto; */
   grid-template-columns: 1fr 1fr 1fr;
@@ -107,6 +145,10 @@ justify-content: center;
 
 .listing > p {
   margin: 0.5em;
+}
+
+.filter {
+  margin-top: 2em;
 }
 
 .fix {
