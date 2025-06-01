@@ -8,25 +8,95 @@
   </head>
   <body>
     <!--header, nav, orange bar-->
-    <h1 class="centerText">Cart</h1>
 
-    <section class="columns">
+    <nav class="clusterNav sansSerif">
+      <!-- <div>
+        <a href="index.html">
+          
+        </a>
+      </div>-->
+      <img src="images/logo.png" alt="" width="13%" class="marginTop" />
+      <ul class="cluster whiteText">
+        <!-- remove bulletpoints -->
+        <!-- navbar-->
+        <li><a href="index.html" class="whiteText orangeHover">HOME</a></li>
+        <!--LINK-->
+        <li><a href="products.html" class="whiteText orangeHover">SHOP</a></li>
+        <!--LINK-->
+        <li class="orangeHover">SUBSCRIPTIONS</li>
+        <li class="orangeHover">WHOLESALE</li>
+        <li class="orangeHover">NEWS</li>
+        <li class="orangeHover">ABOUT</li>
+        <li class="orangeHover">CONTEXT</li>
+      </ul>
+
+      <ul class="cluster icons">
+        <!-- icons-->
+        <li>><img src="images/Account.svg" alt="" class="vectorIcon" /></li>
+        <li>
+          <a href="">
+            <img src="images/Search.svg" alt="" class="vectorIcon" />
+          </a>
+        </li>
+        <!--search bar ^ ?-->
+        <li>
+          <a href="cart.html">
+            <img src="images/Shopping Bag.svg" alt="" class="vectorIcon" />
+          </a>
+        </li>
+        <!--LINK-->
+      </ul>
+
+      <div class="freeShipping sansSerif centerText">
+        <p>Free shipping on all coffee orders over $40</p>
+      </div>
+    </nav>
+
+    <!--end nav bar-->
+
+    <h1 class="centerText marginTop">Cart</h1>
+
+    <section class="columns cartColumns">
       <!--under orange-->
       <div class="leftColumn">
         <!--items-->
 
-        <div><!--insert items? idk --></div>
-        <div><p>coffee product</p></div>
-      </div>
+        <div class="productCartList sansSerif">
+          <!--insert items? idk -->
 
-      <div class="greyBox rightColumn fix">
+          <!--toggle ?-->
+          <div id="forProductOne" class="productInCart">
+            <img src="images/don-claudio.jpg" alt="" width="15%" />
+            <div class="lineHeight">
+              <p>Costa Rica Don Claudio Natural</p>
+              <p>250g / Whole Beans</p>
+            </div>
+
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              min="1"
+              max="10"
+              value="1"
+              class="inputButton"
+            />
+            <p>$17.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="greyBox rightColumn fix lineHeight productInfo sansSerif">
         <!--order summary-->
-        <h3>Order Summary</h3>
-        <p>Subtotal</p>
-        <p>Tax</p>
-        <p>Total</p>
+        <h3 class="centerText serif">Order Summary</h3>
+        <p id="Subtotal" class="clusterNav">Subtotal</p>
+
+        <p id="Tax" class="clusterNav">Tax $0.00</p>
+
+        <p id="Total" class="clusterNav">Total</p>
+
         <div class="twoButtons">
-          <button>Checkout</button> <button>Continue Shopping</button>
+          <button class="button-action orangeButton">CHECKOUT</button>
+          <button class="button-action">CONTINUE SHOPPING</button>
         </div>
       </div>
     </section>
