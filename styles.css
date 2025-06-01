@@ -8,6 +8,9 @@
 body {
   background-color: lightgrey;
   /* overflow: hidden;*/
+}
+
+body.pages {
   padding: 2em;
 }
 
@@ -30,6 +33,19 @@ li {
   list-style: none;
 }
 
+.heroImage {
+  background-image: url("images/banner-pic.jpeg");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.vectorIcon {
+  width: 45%;
+}
 .columns {
   border: solid 1px black;
   display: flex;
@@ -74,7 +90,7 @@ li {
 
 .clusterNav {
   display: flex;
-  flex-wrap: wrap;
+  /*  flex-wrap: wrap;*/
   flex-direction: row;
   justify-content: space-between;
 }
