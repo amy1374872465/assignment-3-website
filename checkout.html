@@ -55,63 +55,66 @@
     <!--form-->
     <h1 class="centerText marginTop">Checkout</h1>
 
-    <section class="columns">
-      <form action="" class="leftColumn">
-        <!--form related-->
+    <div class="largeGreyBox">
+      <section class="columns sansSerif checkoutColumns">
+        <form action="" class="leftColumn checkoutForm">
+          <!--form related-->
 
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" />
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" class="inputButton" />
 
-        <label for="mobile" id="mobile">Mobile:</label>
-        <input type="text" id="mobile" name="mobile" />
+          <label for="mobile" id="mobile">Mobile:</label>
+          <input type="text" id="mobile" name="mobile" class="inputButton" />
 
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" />
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" class="inputButton" />
 
-        <label for="">Address Line 1:</label>
-        <input type="text" id="address" name="address" />
+          <label for="">Address Line 1:</label>
+          <input type="text" id="address" name="address" class="inputButton" />
 
-        <label for="Country">Country:</label>
-        <select name="country" id="">
-          <option value="select">Select</option>
-          <option value="Australia">Australia</option>
-        </select>
+          <label for="Country">Country:</label>
+          <select name="country" id="country" class="inputButton">
+            <option value="select">Select</option>
+            <option value="Australia">Australia</option>
+          </select>
 
-        <label for="Post Code:">Post Code:</label>
-        <input type="text" />
+          <label for="Post Code:">Post Code:</label>
+          <input type="text" class="inputButton" />
 
-        <label for="state">State:</label>
-        <select name="state" id="state">
-          <option value="select">Select</option>
-          <option value="act">Australian Capital Territory</option>
-          <option value="nsw">New South Wales</option>
-          <option value="northern territory">Northern Territory</option>
-          <option value="queensland">Queensland</option>
-          <option value="south aus">South Australia</option>
-          <option value="tas">Tasmania</option>
-          <option value="vic">Victoria</option>
-          <option value="wa">Western Australia</option>
-        </select>
+          <label for="state">State:</label>
+          <select name="state" id="state" class="inputButton">
+            <option value="select">Select</option>
+            <option value="act">Australian Capital Territory</option>
+            <option value="nsw">New South Wales</option>
+            <option value="northern territory">Northern Territory</option>
+            <option value="queensland">Queensland</option>
+            <option value="south aus">South Australia</option>
+            <option value="tas">Tasmania</option>
+            <option value="vic">Victoria</option>
+            <option value="wa">Western Australia</option>
+          </select>
 
-        <label for="payment">Payment Method:</label>
-        <select name="payment" id="payment">
-          <option value="select">Select</option>
-          <option value="creditCard">Credit Card</option>
-          <option value="paypal">PayPal</option>
-        </select>
-      </form>
+          <label for="payment">Payment Method:</label>
+          <select name="payment" id="payment" class="inputButton">
+            <option value="select">Select</option>
+            <option value="creditCard">Credit Card</option>
+            <option value="paypal">PayPal</option>
+          </select>
+        </form>
 
-      <div class="rightColumn fix">
-        <!--confirmation-->
-        <h3>Order</h3>
-        <div><!--for order images--></div>
-        <p>Subtotal</p>
-        <p>Tax</p>
-        <p>Total</p>
-        <div class="twoButtons">
-          <button>PLACE ORDER</button> <button>CONTINUE SHOPPING</button>
+        <div class="greyBox rightColumn fix lineHeight">
+          <!--confirmation-->
+          <h3 class="centerText serif">Order</h3>
+          <div><!--for order images--></div>
+          <p id="Subtotal">Subtotal</p>
+          <p id="Tax">Tax</p>
+          <p id="Total">Total</p>
+          <div class="twoButtons">
+            <button class="button-action orangeButton">PLACE ORDER</button>
+            <button class="button-action">CONTINUE SHOPPING</button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </body>
 </html>
