@@ -46,6 +46,16 @@ li {
 .vectorIcon {
   width: 45%;
 }
+
+.vectorIcon path {
+  fill: whitesmoke;
+  stroke: whitesmoke;
+}
+
+nav {
+  background-image: url("images/banner-pic-edit-1.png");
+}
+
 .columns {
   border: solid 1px black;
   display: flex;
@@ -88,11 +98,23 @@ li {
   margin: 1em;
 }
 
+.whiteText {
+  color: whitesmoke;
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .clusterNav {
+  height: 15%;
   display: flex;
   /*  flex-wrap: wrap;*/
   flex-direction: row;
   justify-content: space-between;
+  padding: 0 2em 0 2em;
+  padding-bottom: 0;
 }
 .cluster {
   display: flex;
