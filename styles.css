@@ -6,13 +6,17 @@
 }
 
 body {
-  background-color: lightgrey;
+  background-color: #eaeaea;
+  width: 100%;
+  max-width: 100%;
   /* overflow: hidden;*/
 }
 
+/*
 body.pages {
   padding: 2em;
 }
+*/
 
 html {
   overflow-y: scroll;
@@ -33,14 +37,33 @@ li {
   list-style: none;
 }
 
+.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.sansSerif {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .heroImage {
   background-image: url("images/banner-pic.jpeg");
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  max-width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.heroText h2 {
+  line-height: 1.3em;
+}
+
+.heroText p {
+  padding: 2em 0 2em 0;
+  display: flex;
+  justify-content: center;
 }
 
 .vectorIcon {
@@ -54,6 +77,21 @@ li {
 
 nav {
   background-image: url("images/banner-pic-edit-1.png");
+  width: 100%;
+  max-width: 100%;
+  padding-right: -2em;
+}
+
+.mainPageMargin {
+  margin-top: 1em;
+}
+
+nav > ul > li {
+  margin-bottom: -2em;
+}
+
+.marginTop {
+  margin-top: 1em;
 }
 
 .columns {
@@ -69,7 +107,7 @@ nav {
 .rightColumn {
   border: dashed 1px black;
   width: 25%;
-  text-wrap: wrap;
+  /*  text-wrap: wrap; */
   padding: 1em;
   /*;
   flex-grow: 0;
@@ -84,9 +122,18 @@ nav {
   justify-content: center;
 }
 
+.productInfo p {
+  max-width: 90%;
+  line-height: 1.3em;
+  margin: 0.5em;
+}
+
 .greyBox {
-  background-color: azure;
+  background-color: #d7d7d7;
   padding: 2em;
+  border: solid 1px black;
+  border-radius: 5px;
+  max-width: 95%;
 }
 
 .centerText {
@@ -102,19 +149,49 @@ nav {
   color: whitesmoke;
 }
 
+.blackText {
+  color: black;
+}
+
+.titleText {
+  margin-bottom: 1em;
+}
+
+.titleText > h3 {
+  text-wrap: wrap;
+  max-width: 50%;
+}
+
+.lineHeight {
+  line-height: 1.5em;
+}
+
 a:link {
   text-decoration: none;
   color: inherit;
 }
 
+.heroImage h2 {
+  font-size: 40px;
+}
+
+.heroText {
+  padding: 6em 0 0 4em;
+  width: 30%;
+  font-weight: lighter;
+}
+
 .clusterNav {
   height: 15%;
   display: flex;
-  /*  flex-wrap: wrap;*/
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 2em 0 2em;
+  /* padding-left: 2em; padding-right: 2em;*/
+
   padding-bottom: 0;
+  /*
+  flex-grow: 0.5 2 0.5; */
 }
 .cluster {
   display: flex;
@@ -127,6 +204,63 @@ a:link {
 .cluster > * {
   margin: 1.5em;
   /*  flex: 1 1 30%; */
+}
+
+nav > img {
+  margin-left: 1em;
+}
+
+/*lines navbar along bottom*/
+nav > ul {
+  margin-bottom: -1em;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.freeShipping {
+  background-color: #cb7e1f;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.button {
+  border: solid 2px whitesmoke;
+  border-radius: 5px;
+  padding: 1em;
+  text-align: center;
+  width: 45%;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.twoButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.button-action {
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 1em;
+  text-align: center;
+  width: 95%;
+  max-width: 100%;
+  cursor: pointer;
+  gap: 1em;
+}
+
+.inputButton {
+  background-color: whitesmoke;
+  padding: 0.5em;
+  box-shadow: 1px 1px;
+  margin-bottom: 1.5em;
+  gap: 1.5em;
+  border: none;
 }
 
 .article {
@@ -145,7 +279,7 @@ a:link {
 }
 
 .gridLayout {
-  background-color: lightgray;
+  background-color: #eaeaea;
   display: grid;
   /*  grid-template-columns: auto auto auto; */
   grid-template-columns: 1fr 1fr 1fr;
@@ -172,7 +306,7 @@ justify-content: center;
 }
 
 .listing {
-  border: solid 1px rgb(90, 13, 13);
+  /*  border: solid 1px rgb(90, 13, 13); */
   padding: 1em;
   position: relative;
   display: flex;
@@ -229,6 +363,9 @@ form {
 .twoButtons {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
 }
 
 .quantity {

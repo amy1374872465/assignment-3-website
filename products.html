@@ -6,131 +6,181 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="pages">
+  <body>
     <!-- header, nav bar -->
 
-    <div class="centerText">
-      <p>
-        <a href="index.html">Home</a> | <a href="products.html">Shop Coffee</a>
-      </p>
-      <h1>Shop our expertly roasted coffees online</h1>
-      <!-- page heading -->
+    <nav class="clusterNav sansSerif">
+      <!-- <div>
+        <a href="index.html">
+          
+        </a>
+      </div>-->
+      <img src="images/logo.png" alt="" width="13%" class="marginTop" />
+      <ul class="cluster whiteText">
+        <!-- remove bulletpoints -->
+        <!-- navbar-->
+        <li><a href="index.html" class="whiteText orangeHover">HOME</a></li>
+        <!--LINK-->
+        <li><a href="products.html" class="whiteText orangeHover">SHOP</a></li>
+        <!--LINK-->
+        <li class="orangeHover">SUBSCRIPTIONS</li>
+        <li class="orangeHover">WHOLESALE</li>
+        <li class="orangeHover">NEWS</li>
+        <li class="orangeHover">ABOUT</li>
+        <li class="orangeHover">CONTEXT</li>
+      </ul>
 
-      <div>
-        <p>
-          Buying coffee has never been easier. Simply choose the coffee of your
-          choice- a blend, a single-origin coffee, filter coffee or a fruit
-          flavoured coffee. Then, you can buy coffee online as we will roast,
-          pack and post within 24hrs.
-        </p>
-        <p>
-          You can expect your delivery within days, depending on the delivery
-          location. Attain your craved coffee profile by choosing any from our
-          range, and we are confident that you will feel the exceptional
-          quality. We are a family-owned and Melbourne based business - we ship
-          our coffees to all parts of Australia.
-        </p>
+      <ul class="cluster icons">
+        <!-- icons-->
+        <li>><img src="images/Account.svg" alt="" class="vectorIcon" /></li>
+        <li>
+          <a href="">
+            <img src="images/Search.svg" alt="" class="vectorIcon" />
+          </a>
+        </li>
+        <!--search bar ^ ?-->
+        <li>
+          <a href="cart.html">
+            <img src="images/Shopping Bag.svg" alt="" class="vectorIcon" />
+          </a>
+        </li>
+        <!--LINK-->
+      </ul>
+
+      <div class="freeShipping sansSerif centerText">
+        <p>Free shipping on all coffee orders over $40</p>
       </div>
-    </div>
+    </nav>
 
-    <div class="article">
-      <aside class="filter">
-        <!-- filter section -->
-        <ul class="fix">
-          <li class="orangeHover"><a href=""></a>ALL</li>
-          <li class="orangeHover"><a href=""></a>COFFEE</li>
-          <li class="orangeHover"><a href=""></a>EQUIPMENT</li>
-          <li class="orangeHover"><a href=""></a>SUBSCRIPTIONS</li>
-        </ul>
-      </aside>
+    <!--end navbar-->
 
+    <section class="mainPageMargin">
       <div>
-        <!--under the orange banner-->
+        <p class="sansSerif">
+          <a href="index.html" class="blackText">Home</a> |
+          <a href="products.html" class="blackText">Shop Coffee</a>
+        </p>
+        <h1 class="centerText titleText">
+          Shop our expertly roasted coffees online
+        </h1>
+        <!-- page heading -->
 
-        <!--    text intro thing-->
-
-        <section class="gridLayout">
-          <!-- list of products -->
-          <div class="listing">
-            <a href="productOne.html"
-              ><img
-                src="images/don-claudio.jpg"
-                alt=""
-                height="240px"
-                class="listingImage"
-            /></a>
-            <p>Costa Rica Don Claudio Natural</p>
-            <!--product -->
-            <p>$17.00</p>
-            <!--price-->
-          </div>
-          <div class="listing">
-            <a href="productTwo.html"
-              ><img
-                src="images/bom-jesus.jpg"
-                alt=""
-                height="240px"
-                class="listingImage"
-            /></a>
-            <p>Bom Jesus Brazil Natural</p>
-            <!--product -->
-            <p>$17.00</p>
-            <!--price-->
-          </div>
-          <div class="listing">
-            <a href="productThree.html"
-              ><img
-                src="images/decaf.jpg"
-                alt=""
-                height="240px"
-                class="listingImage"
-            /></a>
-            <p>Decaf Colombia Swiss Water Process</p>
-            <!--product -->
-            <p>$17.00</p>
-            <!--price-->
-          </div>
-          <div class="listing">
-            <a href=""></a
-            ><img
-              src="images/grupo-terruno.jpg"
-              alt=""
-              height="240px"
-              class="listingImage"
-            />
-            <p>Grupo Terruno Mexico Natural</p>
-            <!--product -->
-            <p>$17.00</p>
-            <!--price-->
-          </div>
-          <div class="listing">
-            <a href=""></a
-            ><img
-              src="images/labareda.jpg"
-              alt=""
-              height="240px"
-              class="listingImage"
-            />
-            <p>Labareda Natural Brazil</p>
-            <!--product -->
-            <p>$17.00</p>
-            <!--price-->
-          </div>
-          <div class="listing">
-            <a href=""></a
-            ><img
-              src="images/kochere-reko-ethiopia-yirgacheffe-natural.jpg"
-              alt=""
-              height="240px"
-              class="listingImage"
-            />
-            <p>Kochere Reko Ethiopia Yirgacheffe Natural</p>
-            <!--product -->
-            <p>$18.00</p>
-            <!--price-->
-          </div>
-        </section>
+        <div class="sansSerif centerText">
+          <p>
+            Buying coffee has never been easier. Simply choose the coffee of
+            your choice- a blend, a single-origin coffee, filter coffee or a
+            fruit flavoured coffee. Then, you can buy coffee online as we will
+            roast, pack and post within 24hrs.
+          </p>
+          <p>
+            You can expect your delivery within days, depending on the delivery
+            location. Attain your craved coffee profile by choosing any from our
+            range, and we are confident that you will feel the exceptional
+            quality. We are a family-owned and Melbourne based business - we
+            ship our coffees to all parts of Australia.
+          </p>
+        </div>
       </div>
-    </div>
+
+      <div class="article">
+        <aside class="filter">
+          <!-- filter section -->
+          <ul class="fix">
+            <li class="orangeHover"><a href=""></a>ALL</li>
+            <li class="orangeHover"><a href=""></a>COFFEE</li>
+            <li class="orangeHover"><a href=""></a>EQUIPMENT</li>
+            <li class="orangeHover"><a href=""></a>SUBSCRIPTIONS</li>
+          </ul>
+        </aside>
+
+        <div>
+          <!--under the orange banner-->
+
+          <!--    text intro thing-->
+
+          <section class="gridLayout">
+            <!-- list of products -->
+            <div class="listing">
+              <a href="productOne.html"
+                ><img
+                  src="images/don-claudio.jpg"
+                  alt=""
+                  height="240px"
+                  class="listingImage"
+              /></a>
+              <p>Costa Rica Don Claudio Natural</p>
+              <!--product -->
+              <p>$17.00</p>
+              <!--price-->
+            </div>
+            <div class="listing">
+              <a href="productTwo.html"
+                ><img
+                  src="images/bom-jesus.jpg"
+                  alt=""
+                  height="240px"
+                  class="listingImage"
+              /></a>
+              <p>Bom Jesus Brazil Natural</p>
+              <!--product -->
+              <p>$17.00</p>
+              <!--price-->
+            </div>
+            <div class="listing">
+              <a href="productThree.html"
+                ><img
+                  src="images/decaf.jpg"
+                  alt=""
+                  height="240px"
+                  class="listingImage"
+              /></a>
+              <p>Decaf Colombia Swiss Water Process</p>
+              <!--product -->
+              <p>$17.00</p>
+              <!--price-->
+            </div>
+            <div class="listing">
+              <a href=""></a
+              ><img
+                src="images/grupo-terruno.jpg"
+                alt=""
+                height="240px"
+                class="listingImage"
+              />
+              <p>Grupo Terruno Mexico Natural</p>
+              <!--product -->
+              <p>$17.00</p>
+              <!--price-->
+            </div>
+            <div class="listing">
+              <a href=""></a
+              ><img
+                src="images/labareda.jpg"
+                alt=""
+                height="240px"
+                class="listingImage"
+              />
+              <p>Labareda Natural Brazil</p>
+              <!--product -->
+              <p>$17.00</p>
+              <!--price-->
+            </div>
+            <div class="listing">
+              <a href=""></a
+              ><img
+                src="images/kochere-reko-ethiopia-yirgacheffe-natural.jpg"
+                alt=""
+                height="240px"
+                class="listingImage"
+              />
+              <p>Kochere Reko Ethiopia Yirgacheffe Natural</p>
+              <!--product -->
+              <p>$18.00</p>
+              <!--price-->
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
