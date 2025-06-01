@@ -270,6 +270,7 @@ nav > ul {
 .twoButtons {
   display: flex;
   justify-content: center;
+  gap: 1em;
 }
 
 .button-action {
@@ -454,5 +455,15 @@ z-index: 2;
   border-radius: 5px;
   width: 80%;
   justify-self: center;
-  margin: 1em;
+  margin: 0.5em;
+}
+
+.addToCartPopUp {
+  max-width: 50%;
+  margin: auto;
+}
+
+.popUp {
+  flex-direction: row;
+  justify-content: center;
 }
