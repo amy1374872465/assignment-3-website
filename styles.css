@@ -687,12 +687,76 @@ z-index: 2;
   }
   */
 }
+
+/*cart*/
 @media screen and (max-width: 600px) {
+  .cartColumns > .leftColumn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+  /*
+.productCartList {
+    width: 80%;
+  }*/
+  .productInCart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .productInCart img {
+    width: 70px;
+  }
+
+  /*
+  .productInCart > p {
+    font-size: 14px;
+    padding: ;
+  }*/
+
+  .productInCart p {
+    font-size: 13px;
+    padding-left: 1em;
+  }
+  .summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d7d7d7;
+    padding: 2em;
+    border: solid 1px black;
+    border-radius: 5px;
+  }
+  /*.cart {
+    position: relative;
+  }*/
+}
+
+/*checkout*/
+@media screen and (max-width: 600px) {
+  .largeGreyBox {
+    background-color: rgb(36, 172, 172);
+    width: 90%;
+  }
+
+  .largeGreyBox > input select {
+    max-width: 200px;
+  }
+  .largeGreyBox label {
+    text-align: left;
+  }
+
+  .order {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 600px) {
 }
-@media screen and (max-width: 600px) {
-}
+
 /*
 @media screen and (min-width: 600px) {
   .menulist {
