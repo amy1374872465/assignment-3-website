@@ -285,7 +285,7 @@ nav > li {
 .button-action {
   border: solid 1px black;
   border-radius: 8px;
-  padding: 1em;
+  padding: 0.8em;
   text-align: center;
   width: 95%;
   max-width: 100%;
@@ -704,9 +704,14 @@ z-index: 2;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 0.2em;
   }
 
-  .productInCart img {
+  .productInCart .inputButton {
+    margin-bottom: 0.2em;
+  }
+
+  .cartColumns .productInCart img {
     width: 70px;
   }
 
@@ -728,6 +733,7 @@ z-index: 2;
     padding: 2em;
     border: solid 1px black;
     border-radius: 5px;
+    width: 85%;
   }
   /*.cart {
     position: relative;
@@ -737,7 +743,7 @@ z-index: 2;
 /*checkout*/
 @media screen and (max-width: 600px) {
   .largeGreyBox {
-    background-color: rgb(36, 172, 172);
+    /* background-color: rgb(36, 172, 172);*/
     width: 90%;
   }
 
@@ -748,10 +754,35 @@ z-index: 2;
     text-align: left;
   }
 
-  .order {
+  .checkoutColumns > .leftColumn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .checkoutColumns > .order {
+    background-color: #d7d7d7;
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    border: solid 1px black;
+    box-shadow: 1px 1px 0.5px;
+    border-radius: 5px;
+    width: 85%;
+  }
+
+  .button-action {
+    width: 100%;
+    padding: 0.5em 1em 0.5em 1em;
+  }
+
+  .order > .productInCart {
+    font-size: 14px;
+    width: 80%;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 600px) {
