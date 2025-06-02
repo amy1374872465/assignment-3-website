@@ -82,6 +82,12 @@ nav {
   padding-right: -2em;
 }
 
+/*cant see hamburger menu on desktop*/
+.menuButton {
+  visibility: hidden;
+  max-height: 0;
+}
+
 .mainPageMargin {
   margin-top: 1em;
 }
@@ -240,10 +246,13 @@ nav > img {
 }
 
 /*lines navbar along bottom*/
-nav > ul {
+
+.menuList > li {
+  margin-top: 10em;
+}
+nav > li {
   margin-bottom: -1em;
 }
-
 .icons {
   display: flex;
   flex-direction: row;
@@ -446,7 +455,7 @@ z-index: 2;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .largeGreyBox {
@@ -459,11 +468,104 @@ z-index: 2;
 }
 
 .addToCartPopUp {
-  max-width: 50%;
-  margin: auto;
+  width: 50%;
+  height: 10%;
+  margin: 0 auto 0 auto;
 }
 
 .popUp {
   flex-direction: row;
   justify-content: center;
 }
+
+/*words on nav bar*/
+.menuList {
+  display: flex;
+  align-items: flex-end;
+}
+
+/*nav bar on mobile size*/
+@media screen and (max-width: 600px) {
+  .menuList {
+    display: none;
+    max-height: 0;
+  }
+
+  .cornerLogo {
+    width: 100px;
+    margin-left: 5em;
+  }
+
+  .icons {
+    float: right;
+    padding-right: 0.5em;
+  }
+
+  .icons img,
+  .menuButton img {
+    width: 20px;
+  }
+
+  .icons > li {
+    max-width: 0.5px;
+  }
+
+  /*hamburger menu*/
+  .menuButton {
+    visibility: visible;
+    padding: 1em;
+    margin-top: 2.3em;
+  }
+
+  .icons {
+    margin-bottom: -1em;
+  }
+  .clusterNav {
+    margin: auto;
+  }
+
+  .freeShipping {
+    padding: 0.2em;
+  }
+  .freeShipping p {
+    font-size: smaller;
+  }
+}
+
+/*homepage responsive*/
+@media screen and (max-width: 600px) {
+  /*.heroImage {
+    rotate: 270deg;
+  }*/
+
+  .heroText {
+    width: 70%;
+  }
+
+  .heroText h2 {
+    padding: 1em;
+    margin-top: 6em;
+    width: 70vw;
+    font-size: 24px;
+    background-color: hsl(0, 0%, 0%, 0.5);
+    border-radius: 5px;
+  }
+  /*
+  .heroText p {
+  }*/
+  .shopNowButton {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 600px) {
+}
+/*
+@media screen and (min-width: 600px) {
+  .menulist {
+    visibility: visible;
+  }
+}*/
