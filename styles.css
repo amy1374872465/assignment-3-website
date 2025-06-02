@@ -547,22 +547,104 @@ z-index: 2;
     margin-top: 6em;
     width: 70vw;
     font-size: 24px;
-    background-color: hsl(0, 0%, 0%, 0.5);
+    background-color: hsla(0, 0%, 0%, 0.63);
     border-radius: 5px;
   }
-  /*
+  /**/
   .heroText p {
-  }*/
+    text-wrap: nowrap;
+    text-align: center;
+  }
   .shopNowButton {
+    width: 70%;
+    margin-left: 3em;
+    margin-top: 4em;
     cursor: pointer;
   }
 }
 
+/*products list*/
 @media screen and (max-width: 600px) {
+  .titleText {
+    margin-top: 0.5em;
+  }
+  .productsIntro {
+    visibility: hidden;
+    max-height: 0;
+  }
+
+  .filter {
+    display: flex;
+    flex-direction: row;
+    z-index: 4;
+    position: absolute;
+    justify-content: space-around;
+    align-items: end;
+  }
+
+  ul.categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -3em;
+    padding-bottom: 1em;
+    gap: 10px;
+  }
+
+  .listing img {
+    height: 180px;
+  }
+
+  .listing {
+    max-width: 40%;
+    text-align: center;
+  }
+
+  .listing p {
+    font-size: 15px;
+    width: 120%;
+  }
+
+  /*
+  .productGrid {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr auto;
+    column-gap: 0.75em;
+  }*/
+
+  .pageOfProducts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .productGrid {
+    width: 90%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+  }
+
+  .breadcrumb {
+    font-size: 14px;
+  }
+}
+
+/*desktop, sticks filter to top*/
+@media screen and (min-width: 600px) {
+  .filter > ul {
+    position: sticky;
+    top: 2em;
+  }
 }
 
 @media screen and (max-width: 600px) {
 }
+
 /*
 @media screen and (min-width: 600px) {
   .menulist {
