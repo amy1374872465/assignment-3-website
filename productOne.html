@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Costa Rica Don Claudio Natural</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" /> 
+    <script src="script.js" async></script>
   </head>
   <body>
     <!--heading and nav bar-->
@@ -154,7 +155,7 @@
               </form>
 
               <div class="twoButtons">
-                <button class="button-action orangeButton">ADD TO CART</button>
+                <button class="button-action orangeButton " id="toConfirmAdd" onclick="openPopUp()">ADD TO CART</button>
 
                 <button class="button-action">ADD TO WISHLIST</button>
               </div>
@@ -166,7 +167,8 @@
 
     <!--confirmation pop up-->
 
-    <div class="addToCartPopUp greyBox sansSerif centerText hidden">
+    <div >
+    <div id="actualPopUpBox" class="addToCartPopUp greyBox sansSerif centerText hidden ">
       <h2>Added to Cart</h3>
 
       <div id="forProductOne" class="productInCart">
@@ -194,8 +196,10 @@
         <a href="products.html" class="button-action blackText"
           >CONTINUE SHOPPING</a
         >
-        <button class="button-action orangeButton">VIEW CART</button>
+        <a href="cart.html" class="button-action orangeButton blackText">VIEW CART</a>
+        <!--<button ></button>-->
       </div>
     </div>
+  </div>
   </body>
 </html>
