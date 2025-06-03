@@ -10,6 +10,13 @@ function openPopUp() {
   //popUpBox.classList.add("open");
 }
 
+//order confirmation pop up
+function confirmPurchase() {
+  let popUp = document.getElementById("orderConfirmation");
+  let classes = popUp.classList;
+  classes.add("open");
+}
+
 //cart related
 
 /*

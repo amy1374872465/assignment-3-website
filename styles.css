@@ -519,7 +519,6 @@ z-index: 2;
 .open {
   visibility: visible;
   display: block;
-
   z-index: 999;
 }
 
@@ -527,6 +526,37 @@ z-index: 2;
   flex-direction: row;
   justify-content: center;
 }
+
+.orderConfirmBox {
+  visibility: hidden;
+  box-shadow: 1px 1px 1px;
+  width: 30%;
+  margin: auto;
+  position: fixed;
+  top: 400;
+  left: 400px;
+  right: 400px;
+  bottom: 400px;
+}
+
+.open {
+  visibility: visible;
+  display: block;
+  z-index: 999;
+}
+
+/*
+.orderConfirmBox #show {
+  visibility: visible;
+  box-shadow: 1px 1px 1px;
+  width: 30%;
+  margin: auto;
+  position: fixed;
+  top: 400;
+  left: 400px;
+  right: 400px;
+  bottom: 400px;
+}*/
 
 /*words on nav bar*/
 .menuList {
@@ -852,8 +882,16 @@ z-index: 2;
     width: 80%;
     justify-content: center;
   }
-}
-@media screen and (max-width: 600px) {
+
+  .orderConfirmBox {
+    display: block;
+    width: 80%;
+    position: fixed;
+    top: 260px;
+    left: 20px;
+    right: 20px;
+    bottom: 420px;
+  }
 }
 
 /*
