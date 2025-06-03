@@ -86,28 +86,52 @@
           <!--form related-->
 
           <label for="name">Full Name:</label>
-          <input type="text" id="name" name="name" class="inputButton" />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="inputButton"
+            required
+          />
 
           <label for="mobile" id="mobile">Mobile:</label>
-          <input type="text" id="mobile" name="mobile" class="inputButton" />
+          <input
+            type="text"
+            id="mobile"
+            name="mobile"
+            class="inputButton"
+            required
+          />
 
           <label for="email">Email:</label>
-          <input type="text" id="email" name="email" class="inputButton" />
+          <input
+            type="text"
+            id="email"
+            name="email"
+            class="inputButton"
+            required
+          />
 
           <label for="">Address Line 1:</label>
-          <input type="text" id="address" name="address" class="inputButton" />
+          <input
+            type="text"
+            id="address"
+            name="address"
+            class="inputButton"
+            required
+          />
 
           <label for="Country">Country:</label>
-          <select name="country" id="country" class="inputButton">
+          <select name="country" id="country" class="inputButton" required>
             <option value="select">Select</option>
             <option value="Australia">Australia</option>
           </select>
 
           <label for="Post Code:">Post Code:</label>
-          <input type="text" class="inputButton" />
+          <input type="text" class="inputButton" required />
 
           <label for="state">State:</label>
-          <select name="state" id="state" class="inputButton">
+          <select name="state" id="state" class="inputButton" required>
             <option value="select">Select</option>
             <option value="act">Australian Capital Territory</option>
             <option value="nsw">New South Wales</option>
@@ -119,7 +143,7 @@
             <option value="wa">Western Australia</option>
           </select>
 
-          <label for="payment">Payment Method:</label>
+          <label for="payment" required>Payment Method:</label>
           <select name="payment" id="payment" class="inputButton">
             <option value="select">Select</option>
             <option value="creditCard">Credit Card</option>
@@ -140,10 +164,17 @@
                 <p>250g / Whole Beans</p>
               </div>
             </div>
-            <div id="forProductOne" class="productInCart">
-              <img src="images/don-claudio.jpg" alt="" width="50px" />
+            <div id="forProductTwo" class="productInCart">
+              <img src="images/bom-jesus.jpg" alt="" width="50px" />
               <div class="lineHeight">
-                <p>Costa Rica Don Claudio Natural</p>
+                <p>Bom Jesus Brazil Natural</p>
+                <p>250g / Whole Beans</p>
+              </div>
+            </div>
+            <div id="forProductThree" class="productInCart">
+              <img src="images/decaf.jpg" alt="" width="50px" />
+              <div class="lineHeight">
+                <p>Decaf Colombia Swiss Water Process</p>
                 <p>250g / Whole Beans</p>
               </div>
             </div>

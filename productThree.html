@@ -5,63 +5,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
   </head>
   <body>
-    <!--heading and nav bar-->
-    <p><a href="">Home</a> | <a href="products.html">Shop Coffee</a></p>
+    <nav class="clusterNav sansSerif">
+      <!-- <div>
+        <a href="index.html">
+          
+        </a>
+      </div>-->
 
-    <section class="column">
-      <!-- 2 columns of actual info under orange FLEX BOX-->
-
-      <div>
-        <!--product info-->
-        <img src="images/decaf.jpg" alt="" width="270px" />
-
-        <div>
-          <!--description-->
-          <p><b>What to Expect: </b>Dark Chocolate + Walnut + Butter</p>
-          <p><b>Altitude: </b>1200 masl</p>
-          <p><b>Process: </b>Swiss Water</p>
-          <p><b>Region: </b>Caturra, Typica</p>
-          <p><b>Variety: </b>Medellin</p>
-        </div>
+      <div class="menuButton">
+        <a
+          href=""
+          style="font-size: 20px"
+          ;
+          color="whitesmoke"
+          class="linesIcon"
+          onclick="myFunction()"
+        >
+          <img src="images/Menu.svg" alt="" />
+        </a>
       </div>
 
-      <div>
-        <!--add to cart column-->
+      <img
+        src="images/logo.png"
+        alt=""
+        width="13%"
+        class="marginTop cornerLogo"
+      />
 
-        <div>
-          <h3>Decaf Colombia Swiss Water Process</h3>
-          <p>$17.00</p>
+      <div class="menuList">
+        <ul class="cluster whiteText">
+          <!-- remove bulletpoints -->
+          <!-- navbar-->
+          <li><a href="index.html" class="whiteText orangeHover">HOME</a></li>
+          <!--LINK-->
+          <li>
+            <a href="products.html" class="whiteText orangeHover">SHOP</a>
+          </li>
+          <!--LINK-->
+          <li class="orangeHover">SUBSCRIPTIONS</li>
+          <li class="orangeHover">WHOLESALE</li>
+          <li class="orangeHover">NEWS</li>
+          <li class="orangeHover">ABOUT</li>
+          <li class="orangeHover">CONTEXT</li>
+        </ul>
+      </div>
 
-          <div class="greyBox">
-            <!--cart box, give own class-->
-            <form action="">
-              <label for="">Size:</label>
-              <select name="" id="">
-                <option value="">250g</option>
-              </select>
-              <label for="">Grind Type:</label>
-              <select name="" id="">
-                <option value="">Whole beans</option>
-              </select>
-              <label for="">Quantity</label>
-              <input
-                type="number"
-                id="quantity"
-                name="quantity"
-                min="1"
-                max="10"
-                value="1"
-              />
-            </form>
+      <ul class="cluster icons">
+        <!-- icons-->
+        <li><img src="images/Account.svg" alt="" class="vectorIcon" /></li>
+        <li>
+          <a href="">
+            <img src="images/Search.svg" alt="" class="vectorIcon" />
+          </a>
+        </li>
+        <!--search bar ^ ?-->
+        <li>
+          <a href="cart.html">
+            <img src="images/Shopping Bag.svg" alt="" class="vectorIcon" />
+          </a>
+        </li>
+        <!--LINK-->
+      </ul>
 
-            <div>
-              <button>ADD TO CART</button> <button>ADD TO WISHLIST</button>
+      <div class="freeShipping sansSerif centerText">
+        <p>Free shipping on all coffee orders over $40</p>
+      </div>
+    </nav>
+    <!--end nav-->
+
+    <section class="mainPageMargin">
+      <p class="sansSerif marginLeft breadcrumb">
+        <a href="index.html" class="blackText">Home</a> |
+        <a href="products.html" class="blackText">Shop Coffee</a>
+      </p>
+
+      <section class="infoProduct columns sansSerif">
+        <!-- 2 columns of actual info under orange FLEX BOX-->
+
+        <div class="leftColumn">
+          <!--product info-->
+          <img src="images/decaf.jpg" alt="" width="270px" />
+
+          <div class="productInfo marginTop">
+            <!--description, stack layout-->
+            <p><b>What to Expect: </b>Dark Chocolate + Walnut + Butter</p>
+            <p><b>Altitude: </b>1200 masl</p>
+            <p><b>Process:</b> Swiss Water</p>
+            <p><b>Region:</b> Caturra, Typica</p>
+            <p><b>Variety:</b> Medellin</p>
+          </div>
+        </div>
+
+        <div class="addToCart rightColumn fix">
+          <!--add to cart column-->
+
+          <div class="textHeight">
+            <div class="titleText">
+              <h3>Decaf Colombia Swiss Water Process</h3>
+              <p>$17.00</p>
+            </div>
+
+            <div class="greyBox">
+              <!--cart box, give own class-->
+              <form action="" class="productForm">
+                <div class="sizeAndGrind">
+                  <div class="vertical">
+                    <label for="size">Size:</label>
+                    <select name="" id="" class="inputButton">
+                      <option value="">250g</option>
+                    </select>
+                  </div>
+
+                  <div class="vertical">
+                    <label for="grindType">Grind Type:</label>
+                    <select name="" id="" class="inputButton">
+                      <option value="">Whole beans</option>
+                    </select>
+                  </div>
+                </div>
+
+                <label for="quantity" class="quantity">Quantity</label>
+                <input
+                  type="number"
+                  id="quantity"
+                  name="quantity"
+                  min="1"
+                  max="10"
+                  value="1"
+                  class="inputButton"
+                />
+              </form>
+
+              <div class="twoButtons">
+                <button
+                  class="button-action orangeButton"
+                  id="toConfirmAdd"
+                  onclick="openPopUp1()"
+                >
+                  ADD TO CART
+                </button>
+
+                <button class="button-action">ADD TO WISHLIST</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </section>
+
+    <!--confirmation pop up-->
+
+    <div>
+      <div id="actualPopUpBox1" class="addToCartPopUp greyBox sansSerif hidden">
+        <h2 class="centerText">Added to Cart</h2>
+
+        <div id="forProductOne" class="productInCart">
+          <img src="images/decaf.jpg" alt="" width="15%" />
+          <div class="lineHeight">
+            <p id="wrap">Decaf Colombia Swiss Water Process</p>
+            <p>250g / Whole Beans</p>
+          </div>
+
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            max="10"
+            value="1"
+            class="inputButton"
+          />
+          <p>$17.00</p>
+        </div>
+
+        <p class="centerText titleText">1 Item | Subtotal $17.00</p>
+
+        <div class="twoButtons popUp">
+          <a href="products.html" class="button-action blackText"
+            >CONTINUE SHOPPING</a
+          >
+          <a href="cart.html" class="button-action orangeButton blackText"
+            >VIEW CART</a
+          >
+          <!--<button ></button>-->
+        </div>
+      </div>
+    </div>
   </body>
 </html>

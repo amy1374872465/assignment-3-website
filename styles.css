@@ -383,6 +383,9 @@ justify-content: center;
   top: 2em;
 }
 
+#wrap {
+  width: 90%;
+}
 .orangeHover:hover {
   color: rgb(226, 141, 13);
   transition: 0.1s;
@@ -458,9 +461,15 @@ z-index: 2;
 .productInCart {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 1em;
   padding: 0.5em;
+  font-size: 13px;
+}
+
+.productInCart > p {
+  text-align: left;
 }
 
 .largeGreyBox {
@@ -483,7 +492,7 @@ z-index: 2;
   top: 250px;
   left: 400px;
   right: 400px;
-  bottom: 330px;
+  bottom: 360px;
 
   /*display: flex;
   align-items: center;
@@ -770,7 +779,7 @@ z-index: 2;
     top: 150px;
     left: 20px;
     right: 20px;
-    bottom: 300px;
+    bottom: 400px;
   }
   /* 
   .addToCartPopUp > .productInCart {
@@ -883,6 +892,9 @@ z-index: 2;
     justify-content: center;
   }
 
+  .order #forProductTwo p {
+    padding-right: 1.2em;
+  }
   .orderConfirmBox {
     display: block;
     width: 80%;

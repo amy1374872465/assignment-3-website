@@ -84,7 +84,7 @@
         <div class="leftColumn">
           <!--items-->
 
-          <div class="productCartList sansSerif">
+          <div id="cartList" class="productCartList sansSerif" >
             <!--insert items? idk -->
 
             <!--toggle ?-->
@@ -106,7 +106,57 @@
                   class="inputButton"
                 />
                 <br />
-                <button class="button-remove">Remove</button>
+                <button class="button-remove" onclick="removeOne()">
+                  Remove
+                </button>
+              </div>
+              <p>$17.00</p>
+            </div>
+            <div id="forProductTwo" class="productInCart">
+              <img src="images/bom-jesus.jpg" alt="" width="15%" />
+
+              <div class="lineHeight">
+                <p>Bom Jesus Brazil Natural</p>
+                <p>250g / Whole Beans</p>
+              </div>
+              <div class="numberOf">
+                <input
+                  type="number"
+                  id="quantity"
+                  name="quantity"
+                  min="1"
+                  max="10"
+                  value="1"
+                  class="inputButton"
+                />
+                <br />
+                <button class="button-remove" onclick="removeTwo()">
+                  Remove
+                </button>
+              </div>
+              <p>$17.00</p>
+            </div> 
+            <div id="forProductThree" class="productInCart">
+              <img src="images/decaf.jpg" alt="" width="15%" />
+
+              <div class="lineHeight">
+                <p>Decaf Colombia Swiss Water Process</p>
+                <p>250g / Whole Beans</p>
+              </div>
+              <div class="numberOf">
+                <input
+                  type="number"
+                  id="quantity"
+                  name="quantity"
+                  min="1"
+                  max="10"
+                  value="1"
+                  class="inputButton"
+                />
+                <br />
+                <button class="button-remove" onclick="removeThree()">
+                  Remove
+                </button>
               </div>
               <p>$17.00</p>
             </div>
@@ -119,7 +169,7 @@
           <!--order summary-->
           <h3 class="centerText serif">Order Summary</h3>
 
-          <p id="Total" class="clusterNav"><b>Total</b></p>
+          <p  id="total"><b>Total</b></p></p>
 
           <div class="twoButtons">
             <a href="checkout.html" class="button-action orangeButton blackText"
