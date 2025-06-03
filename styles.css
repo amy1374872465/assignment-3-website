@@ -211,6 +211,18 @@ a:link {
   color: inherit;
 }
 
+.leftRight {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3em;
+}
+
+.closer .orangeButton {
+  margin-top: 0.8em;
+  margin-bottom: -1em;
+}
+
 .heroImage h2 {
   font-size: 40px;
 }

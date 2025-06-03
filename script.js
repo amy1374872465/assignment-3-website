@@ -47,10 +47,38 @@ total = 0;*/
 
 //return numberItems;
 /*const totalItems = document.getElementById("cartList");
-return totalItems;
+let numberItems = totalItems.childElementCount;
+*/
+/*
+let totalItems = 3;
+function updateTotal() {
+  let price = document.getElementById("total");
+  let total = 51;
+  if ((totalItems = 3)) {
+    price = total;
+  } else if ((totalItems = 2)) {
+    price = total - 17;
+  } else if ((totalItems = 1)) {
+    price = total - 34;
+  } else if ((totalItems = 0)) {
+    price = 0;
+  }
+  price.innerHTML = "Total + " price;
+}
 
 function updateTotal() {
-  let numberItems = totalItems.children.length;
+  let totalItems = document.getElementById("cartList").children.length;
+  console.log(totalItems);
+  totalItems.textContent = "yay";
+}
+
+
+
+let numberItems;
+numberItems = document.getElementById("cartList").childElementCount;
+
+function updateTotal() {
+  // let numberItems;
   let total = document.getElementById("total");
   if (numberItems == 0) {
     total = "Total: $0.00";
@@ -59,28 +87,41 @@ function updateTotal() {
   }
 
   total.textContent = total;
-} */
+}here*/
 
 //let newtotal = -17;
 //total.textContent = newtotal;
 
+/*
+function updateTotal() {
+  let totalItems = document.getElementById("cartList").children.length;
+  console.log(totalItems);
+}*/
+
+function updateTotal() {
+  let totalItems = document.querySelector("div(.productInCart):not(.hidden)");
+  console.log(totalItems);
+}
+
 //remove items from cart
 function removeOne() {
   const item = document.getElementById("forProductOne");
-  let classes = item.classList;
   item.classList.add("hidden");
+  //  totalItems -= 1;
   updateTotal();
 }
 function removeTwo() {
   const item = document.getElementById("forProductTwo");
-  let classes = item.classList;
   item.classList.add("hidden");
+  //  totalItems -= 1;
+
   updateTotal();
 }
 function removeThree() {
   const item = document.getElementById("forProductThree");
-  let classes = item.classList;
   item.classList.add("hidden");
+  // totalItems -= 1;
+
   updateTotal();
 }
 
