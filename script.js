@@ -96,33 +96,45 @@ function updateTotal() {
 function updateTotal() {
   let totalItems = document.getElementById("cartList").children.length;
   console.log(totalItems);
-}*/
+}
 
 function updateTotal() {
   let totalItems = document.querySelector("div(.productInCart):not(.hidden)");
   console.log(totalItems);
-}
+}*/
 
-//remove items from cart
+//remove items from cart desktop
 function removeOne() {
   const item = document.getElementById("forProductOne");
   item.classList.add("hidden");
-  //  totalItems -= 1;
-  updateTotal();
+  //  totalItems -= 1;  updateTotal();
 }
 function removeTwo() {
   const item = document.getElementById("forProductTwo");
   item.classList.add("hidden");
-  //  totalItems -= 1;
-
-  updateTotal();
+  //  totalItems -= 1;  updateTotal();
 }
 function removeThree() {
   const item = document.getElementById("forProductThree");
   item.classList.add("hidden");
-  // totalItems -= 1;
+  // totalItems -= 1;  updateTotal();
+}
 
-  updateTotal();
+//remove items from cart mobile
+function removeOne() {
+  const item = document.getElementById("forProductOne");
+  item.classList.add("hide");
+  //  totalItems -= 1;  updateTotal();
+}
+function removeTwo() {
+  const item = document.getElementById("forProductTwo");
+  item.classList.add("hide");
+  //  totalItems -= 1;  updateTotal();
+}
+function removeThree() {
+  const item = document.getElementById("forProductThree");
+  item.classList.add("hide");
+  // totalItems -= 1;  updateTotal();
 }
 
 //cart related

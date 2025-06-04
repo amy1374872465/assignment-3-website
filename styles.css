@@ -513,10 +513,14 @@ z-index: 2;
 
 .hidden {
   display: none;
-
-  /* visibility: hidden;
-  max-height: 0;*/
 }
+
+/*for removing items on mobile*/
+#cartList .hide {
+  display: none;
+}
+/* visibility: hidden;
+  max-height: 0;*/
 
 /**/
 .addToCartPopUp #open {
